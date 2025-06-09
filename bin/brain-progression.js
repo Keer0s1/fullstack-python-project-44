@@ -1,23 +1,23 @@
 #!/usr/bin/env node
-import greetUser from '../src/cli.js';
-import getProgression from '../src/games/progression.js';
+import greetUser from '../src/cli.js'
+import getProgression from '../src/games/progression.js'
 
-const roundsCount = 3;
+const roundsCount = 3
 
 const runGame = () => {
-  const name = greetUser();
-  console.log('What number is missing in the progression?');
+  const name = greetUser()
+  console.log('What number is missing in the progression?')
 
-  let correctAnswers = 0;
+  let correctAnswers = 0
 
   while (correctAnswers < roundsCount) {
-    const result = getProgression(name);
+    const result = getProgression(name)
     if (!result) {
-      return;
+      return
     }
-    correctAnswers += 1;
+    correctAnswers += 1
   }
-  console.log(`Congratulations, ${name}!`);
-};
+  console.log(`Congratulations, ${name}!`)
+}
 
-runGame();
+runGame()
