@@ -2,15 +2,18 @@
 import readlineSync from 'readline-sync';
 
 const getGcd = (a, b) => {
-  while (b !== 0) {
-    const temp = b;
-    b = a % b;
-    a = temp;
+  let x = a;
+  let y = b;
+
+  while (y !== 0) {
+    const temp = y;
+    y = x % y;
+    x = temp;
   }
-  return a;
+  return x;
 };
 
-export const playGcdGame = (userName) => {
+const playGcdGame = (userName) => {
   console.log('Find the greatest common divisor of given numbers.');
 
   let correctAnswers = 0;
@@ -37,3 +40,5 @@ export const playGcdGame = (userName) => {
 
   console.log(`Congratulations, ${userName}!`);
 };
+
+export default playGcdGame;

@@ -14,7 +14,7 @@ const playProgressionGame = (name) => {
 
   const progressionLength = 10;
   const start = Math.floor(Math.random() * 10) + 1; // от 1 до 10
-  const step = Math.floor(Math.random() * 5) + 1;   // от 1 до 5
+  const step = Math.floor(Math.random() * 5) + 1; // от 1 до 5
   const hiddenIndex = Math.floor(Math.random() * progressionLength);
 
   const progression = getProgression(start, step, progressionLength);

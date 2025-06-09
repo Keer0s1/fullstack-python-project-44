@@ -1,5 +1,5 @@
-import getUserName from '../cli.js';
 import readlineSync from 'readline-sync';
+import getUserName from '../cli.js';
 
 const getRandomNumber = () => Math.floor(Math.random() * 50) + 1;
 const getRandomOperator = () => {

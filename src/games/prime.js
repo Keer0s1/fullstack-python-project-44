@@ -10,7 +10,6 @@ const isPrime = (num) => {
 };
 
 const playPrimeGame = () => {
-  
   const name = greetUser();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
