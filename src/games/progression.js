@@ -1,4 +1,3 @@
-// src/games/progression.js
 import readlineSync from 'readline-sync'
 
 const getProgression = (start, step, length) => {
@@ -9,7 +8,7 @@ const getProgression = (start, step, length) => {
   return progression
 }
 
-const playProgressionGame = name => {
+const playProgressionGame = (name) => {
   console.log('What number is missing in the progression?')
 
   const progressionLength = 10

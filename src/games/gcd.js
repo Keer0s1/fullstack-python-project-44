@@ -1,4 +1,3 @@
-// src/games/gcd.js
 import readlineSync from 'readline-sync'
 
 const getGcd = (a, b) => {
@@ -13,7 +12,7 @@ const getGcd = (a, b) => {
   return x
 }
 
-const playGcdGame = userName => {
+const playGcdGame = (userName) => {
   console.log('Find the greatest common divisor of given numbers.')
 
   let correctAnswers = 0
